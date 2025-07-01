@@ -42,7 +42,30 @@ A simple Python simulation of a turbojet engine with and without afterburner cap
 ## Example Output
 
 === Jet Engine (No Afterburner) ===
-Compressor Temp: 399.55 K
-Combustor Temp: 1978.33 K
+=== Base Engine (No Afterburner) ===
+Compressor Temp: 453.87 K
+Combustor Temp: 2296.33 K
+Turbine/Nozzle Exit Temp: 2044.10 K
+Exhaust Velocity: 1724.90 m/s
+Thrust: 57038.20 N
+Fuel Flow Rate: 3.5654 kg/s
+TSFC: 62.51 mg/N·s
+Thermal Efficiency: 51.04 %
+Propulsive Efficiency: 36.47 %
+Overall Efficiency: 18.61 %
+Specific Impulse (Isp): 1631.32 s
+
+=== Afterburning Engine ===
+Compressor Temp: 453.87 K
+Combustor Temp: 2296.33 K
+Turbine/Nozzle Exit Temp: 3238.13 K
+Exhaust Velocity: 2337.92 m/s
+Thrust: 105608.17 N
+Fuel Flow Rate: 5.9423 kg/s
+TSFC: 56.27 mg/N·s
+Thermal Efficiency: 69.24 %
+Propulsive Efficiency: 41.38 %
+Overall Efficiency: 28.65 %
+Specific Impulse (Isp): 1812.27 s
 
 Kacper Kowalski - 2025
