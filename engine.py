@@ -7,6 +7,12 @@ CP = 1005    # Specific heat at constant pressure [J/kg·K]
 GRAVITY = 9.80665  # Gravity [m/s²]
 
 class JetEngine:
+
+    """
+    Simulates the performance of a turbojet engine using basic thermodynamic priciples.
+    Icludes afterburner functionality and calculates key performance metrics.
+    """
+    
     def __init__(
         self,
         altitude=10000, # metres
@@ -40,6 +46,16 @@ class JetEngine:
         self.frontal_area = frontal_area
 
     def isa_atmosphere(self, altitude):
+
+        """
+        Calculates temperature, pressure, and density at a given altitude
+        
+        Parameters:
+        altitude (float): Altitude in meters
+        
+        Returns:
+        tuple: (Temperature in K, Pressure in Pa, Density in kg/m³)
+        """
         if altitude < 11000:  # Troposphere
             T = 288.15 - 0.0065 * altitude 
             P = 101325 * (T / 288.15) ** (-(GRAVITY / (0.0065 * R)))
